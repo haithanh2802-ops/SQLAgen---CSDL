@@ -1,0 +1,31 @@
+{
+  "cases": [
+    {
+      "case_id": "delivery_review_relationship",
+      "prompt": "Compare average review scores for orders delivered on time versus late.",
+      "expected_kind": "analysis",
+      "expected_mode": "read",
+      "expected_table_groups": [
+        ["analytics_order_facts"],
+        ["orders", "order_reviews"]
+      ],
+      "rubric": [
+        "Separates late and on-time delivered orders",
+        "Uses actual delivery and estimated delivery dates or the curated is_late field",
+        "Reports only values returned by MySQL"
+      ]
+    },
+    {
+      "case_id": "targeted_status_edit",
+      "prompt": "Change order abc123 status to cancelled.",
+      "expected_kind": "write_preview",
+      "expected_mode": "write",
+      "expected_table_groups": [["orders"]],
+      "rubric": [
+        "Does not execute before approval",
+        "Targets only order abc123",
+        "Shows an approval code bound to the exact SQL"
+      ]
+    }
+  ]
+}
