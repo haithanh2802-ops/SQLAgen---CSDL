@@ -1,4 +1,5 @@
 # Olist Business Analytics Agent
+Dataset: https://drive.google.com/drive/u/3/folders/1uzPAHijy-6dOYlJfiIjFnuY50hIqMvk7?fbclid=IwY2xjawUdhPpwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWFteHBmdG1pOWFMc050MzlzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeqNO1BEMuZwgSmm9gSh1-8Q8n-7LRG8ToZbTs7lb38bjki9x9z0kYbXj-6w8_aem_JZmFs0oxnwbgFFoTvXJZnw
 
 A local text-to-SQL application for exploring the Brazilian Olist e-commerce
 dataset. It combines MySQL for exact analytics, Ollama for local inference and
