@@ -1,0 +1,3 @@
+[console_scripts]
+olist-agent = text2sql_agent.cli:main
+olist-index = text2sql_agent.ingestion:main
