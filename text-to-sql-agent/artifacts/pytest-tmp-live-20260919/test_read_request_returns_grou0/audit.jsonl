@@ -1,2 +1,0 @@
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "request_classified", "request_id": "ff05132373a0420190ed5d0060b5c59f", "action": "read", "clarification_needed": false}
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "read_completed", "request_id": "ff05132373a0420190ed5d0060b5c59f", "operation": "SELECT", "tables": ["orders"], "sql_hash": "1f15f845e14ee43e51b6b97e14ecd286eb8782a6ca4deafea087e0dc84e86f7d", "row_count": 1, "truncated": false, "execution_ms": 4.2}

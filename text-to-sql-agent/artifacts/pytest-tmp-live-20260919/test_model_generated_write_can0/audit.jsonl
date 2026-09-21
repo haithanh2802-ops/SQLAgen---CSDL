@@ -1,2 +1,0 @@
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "request_classified", "request_id": "79dbbda68cf141a89166a60978740b65", "action": "read", "clarification_needed": false}
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "sql_blocked", "request_id": "79dbbda68cf141a89166a60978740b65", "mode": "read", "operation": "DELETE", "reasons": ["DELETE is not permitted in read mode."]}

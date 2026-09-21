@@ -1,3 +1,0 @@
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "request_classified", "request_id": "57b9f187d783419db4c7c4c269675fa1", "action": "read", "clarification_needed": false}
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "sql_collation_mismatch", "request_id": "57b9f187d783419db4c7c4c269675fa1", "sql_hash": "08a0a428c4b4c076e553fc3a72c695c8be74f8be232d69e0f32490152da0e969", "mysql_error_code": 1267}
-{"timestamp": "2026-09-19T04:12:36+00:00", "event": "read_completed", "request_id": "57b9f187d783419db4c7c4c269675fa1", "operation": "SELECT", "tables": ["olist_customers_dataset", "olist_orders_dataset"], "sql_hash": "9a59ba38c452f6a5990176c1a1f12949ada833e783ae183189cdce29fbe5bbb5", "row_count": 1, "truncated": false, "execution_ms": 5.0}
