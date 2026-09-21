@@ -1,0 +1,4 @@
+{"timestamp": "2026-09-19T04:12:36+00:00", "event": "request_classified", "request_id": "5666b8c429b547e8b530d861ae87fbe0", "action": "write", "clarification_needed": false}
+{"timestamp": "2026-09-19T04:12:36+00:00", "event": "write_proposed", "request_id": "5666b8c429b547e8b530d861ae87fbe0", "operation": "UPDATE", "tables": ["orders"], "sql_hash": "00b17d843b9ddbae89d9415218e7427ed13b994017de8a1f017ab73f0a276b50", "estimated_rows": 1}
+{"timestamp": "2026-09-19T04:12:36+00:00", "event": "write_approved", "operation": "UPDATE", "tables": ["orders"], "sql_hash": "00b17d843b9ddbae89d9415218e7427ed13b994017de8a1f017ab73f0a276b50"}
+{"timestamp": "2026-09-19T04:12:36+00:00", "event": "write_completed", "operation": "UPDATE", "sql_hash": "00b17d843b9ddbae89d9415218e7427ed13b994017de8a1f017ab73f0a276b50", "affected_rows": 1, "execution_ms": 2.1}

@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "case_id": "delivery_review_relationship",
+      "passed": false,
+      "checks": {
+        "response_kind": false,
+        "policy_allowed": false,
+        "expected_tables": false
+      },
+      "response_kind": "error",
+      "error": "(pymysql.err.OperationalError) (1267, \"Illegal mix of collations (utf8mb4_unicode_ci,IMPLICIT) and (utf8mb4_0900_ai_ci,IMPLICIT) for operation '='\")\n[SQL: WITH delivery_delays AS (\n  SELECT\n    o.order_id,\n    CASE\n      WHEN DATEDIFF(o.order_delivered_customer_date, o.order_estimated_delivery_date) <= 0\n      THEN 'on_time'\n      ELSE 'late'\n    END AS delivery_status,\n    r.review_score\n  FROM olist_orders_dataset AS o\n  JOIN olist_order_reviews_dataset AS r\n    ON r.order_id = o.order_id\n  WHERE\n    o.order_status = 'delivered' AND NOT o.order_delivered_customer_date IS NULL\n)\nSELECT\n  delivery_status,\n  AVG(review_score) AS avg_review_score,\n  COUNT(*) AS order_count\nFROM delivery_delays\nGROUP BY\n  delivery_status\nORDER BY\n  delivery_status\nLIMIT 200]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)",
+      "rubric_for_human_review": [
+        "Separates late and on-time delivered orders",
+        "Uses actual delivery and estimated delivery dates or the curated is_late field",
+        "Reports only values returned by MySQL"
+      ]
+    },
+    {
+      "case_id": "targeted_status_edit",
+      "passed": false,
+      "checks": {
+        "response_kind": false,
+        "policy_allowed": false,
+        "expected_tables": false,
+        "approval_present": false
+      },
+      "response_kind": "error",
+      "error": "The proposed SQL was blocked: Table `order_status` is not in the allowed table catalog.",
+      "rubric_for_human_review": [
+        "Does not execute before approval",
+        "Targets only order abc123",
+        "Shows an approval code bound to the exact SQL"
+      ]
+    }
+  ]
+}
